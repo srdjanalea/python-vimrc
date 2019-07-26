@@ -27,6 +27,7 @@ call vundle#begin()
     Plugin 'scrooloose/nerdtree'                " Project and file navigation
     Plugin 'majutsushi/tagbar'                  " Class/module browser
     Plugin 'kien/ctrlp.vim'                     " Fast transitions on project files
+    Plugin 'wincent/command-t'                  " Fast directory browser
 
     "-------------------=== Other ===-------------------------------
     Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
@@ -64,7 +65,7 @@ filetype plugin indent on
 syntax enable                               " syntax highlight
 
 set t_Co=256                                " set 256 colors
-colorscheme wombat256mod                    " set color scheme
+colorscheme molokai                         " set color scheme
 
 set number                                  " show line numbers
 set ruler
@@ -116,7 +117,7 @@ set hlsearch	                            " highlight search results
 "=====================================================
 "" AirLine settings
 "=====================================================
-let g:airline_theme='badwolf'
+let g:airline_theme='minimalist'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline_powerline_fonts=1
@@ -135,7 +136,7 @@ autocmd BufWinLeave *.py :TagbarClose
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']     " Ignore files in NERDTree
 let NERDTreeWinSize=40
 autocmd VimEnter * if !argc() | NERDTree | endif  " Load NERDTree only if vim is run without arguments
-nmap " :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 "=====================================================
 "" SnipMate settings
@@ -238,3 +239,11 @@ let g:ycm_confirm_extra_conf=0
 
 nmap <leader>g :YcmCompleter GoTo<CR>
 nmap <leader>d :YcmCompleter GoToDefinition<CR>
+
+" Custom settings
+"
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
