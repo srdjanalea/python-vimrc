@@ -127,8 +127,7 @@ let g:airline_powerline_fonts=1
 "=====================================================
 let g:tagbar_autofocus=0
 let g:tagbar_width=42
-autocmd BufEnter *.py :call tagbar#autoopen(0)
-autocmd BufWinLeave *.py :TagbarClose
+nmap <F8> :TagbarToggle<CR>
 
 "=====================================================
 "" NERDTree settings
@@ -241,9 +240,14 @@ nmap <leader>g :YcmCompleter GoTo<CR>
 nmap <leader>d :YcmCompleter GoToDefinition<CR>
 
 " Custom settings
-"
+
 " split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Command-T bindings
+nmap <silent> <C-t> <Plug>(CommandT)
+nmap <silent> <C-b> <Plug>(CommandTBuffer)
+nmap <silent> <C-j> <Plug>(CommandTJump)noremap <C-H> <C-W><C-H>
