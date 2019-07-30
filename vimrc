@@ -65,7 +65,7 @@ filetype plugin indent on
 syntax enable                               " syntax highlight
 
 set t_Co=256                                " set 256 colors
-colorscheme molokai                         " set color scheme
+colorscheme wombat256mod                    " set color scheme
 
 set number                                  " show line numbers
 set ruler
