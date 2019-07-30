@@ -49,6 +49,13 @@ this:
   ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
 
 
+To finish command-t module installation do the following:
+
+.. code-block:: bash
+
+   ruby ~/.vim/bundle/command-t/ruby/command-t/ext/command-t/extconf.rb
+   cd /home/srdjan/.vim/bundle/command-t/ruby/command-t/ext/command-t/ && make
+
 Key bindings
 ============
 
@@ -61,12 +68,15 @@ bindings, but there are some custom key bindings as well:
 
     inoremap jj     # Esc alternative
     inoremap jk     # Esc alternative
-
+   
+    nmap <C-t>      # Toggle Command-T search
+    nmap <C-b>      # Toggle Command-T buffer search 
+    nmap <C-j>      # Toggle Co
+    nmap <F8>       # Toggle NERDTree buffer 
     nmap <F9>       # Jump to the previous buffer
     nmap <F10>      # Jump to the next buffer
-
+    
     nmap <leader>q  # Delete buffer
-    nmap "          # Toggle NERDTree buffer 
 
     # Python mode key bindings:
 
