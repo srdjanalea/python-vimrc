@@ -54,7 +54,7 @@ To finish command-t module installation do the following:
 .. code-block:: bash
 
    ruby ~/.vim/bundle/command-t/ruby/command-t/ext/command-t/extconf.rb
-   cd /home/srdjan/.vim/bundle/command-t/ruby/command-t/ext/command-t/ && make
+   cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t/ && make
 
 Key bindings
 ============
