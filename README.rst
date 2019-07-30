@@ -49,6 +49,9 @@ this:
   ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
 
 
+File browser
+------------
+
 To finish command-t module installation do the following:
 
 .. code-block:: bash
