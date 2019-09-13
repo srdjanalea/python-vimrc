@@ -27,7 +27,6 @@ call vundle#begin()
     Plugin 'scrooloose/nerdtree'                " Project and file navigation
     Plugin 'majutsushi/tagbar'                  " Class/module browser
     Plugin 'kien/ctrlp.vim'                     " Fast transitions on project files
-    Plugin 'wincent/command-t'                  " Fast directory browser
 
     "-------------------=== Other ===-------------------------------
     Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
@@ -238,16 +237,3 @@ let g:ycm_confirm_extra_conf=0
 
 nmap <leader>g :YcmCompleter GoTo<CR>
 nmap <leader>d :YcmCompleter GoToDefinition<CR>
-
-" Custom settings
-
-" split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" Command-T bindings
-nmap <silent> <C-t> <Plug>(CommandT)
-nmap <silent> <C-b> <Plug>(CommandTBuffer)
-nmap <silent> <C-j> <Plug>(CommandTJump)noremap <C-H> <C-W><C-H>
